@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PureCsharp
 {
-    public class operators
+    public class Operators
     {
         static void IsControl()
         {
