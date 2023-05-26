@@ -39,6 +39,10 @@ namespace PureCsharp
 
             bool isControl12 = o1 is TimeSpan?;
         }
+        public void giveName(string Name, string Surname)
+        {
+            Console.Write("Adınız soyadınız : {0} {1}", Name, Surname);
+        }
         static void AsControl()
         {
 
