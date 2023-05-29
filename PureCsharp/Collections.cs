@@ -248,5 +248,52 @@ namespace PureCsharp
             // Key value listesidir, Hashtable dan farkı içerideki keyleri A-Z sıralar veya
             //Sayıları küçükten büyüğe sıralar
         }
+        static void queueDequeueStackList()
+        {
+            #region Stack
+            Stack<int> newStack = new Stack<int> { };  // last in first out
+
+            newStack.Push(2);
+            newStack.Push(4);
+            newStack.Push(223);
+            newStack.Push(3232);
+            newStack.Push(2323);
+
+            newStack.Pop(); // deletes top of element. it will delete 2323 because 2323 stays at 0 index
+
+            var smth = newStack.Peek(); // returns first element. 0 index
+            Console.WriteLine(smth);
+            #endregion
+
+
+
+            #region Queue
+            Queue<int> myQueue = new Queue<int> { }; // First in First out
+
+            myQueue.Enqueue(2);
+            myQueue.Enqueue(4);
+            myQueue.Enqueue(223);
+            myQueue.Enqueue(3232);
+            myQueue.Enqueue(2323);
+
+            myQueue.Dequeue(); // deletes top of element. it will delete 2 because 2 stays at 0 index
+
+            var smth1 = myQueue.Peek(); // returns first element. 0 index
+            Console.WriteLine(smth1);
+            Console.ReadLine();
+            #endregion
+
+
+            #region List
+
+            List<int> myList = new List<int> { };
+
+            myList.Add(2);
+            myList.Add(4);
+            myList.Add(223);
+            myList.Add(2323);
+            #endregion
+
+        }
     }
 }
